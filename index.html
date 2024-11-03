@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Contact List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Family Contact</h1>
+    </header>
+
+    <section id="contact-list">
+        <h2>Contact Numbers</h2>
+        <div class="contact-item">
+            <p>Father: <span class="phone-number" onclick="copyToClipboard('010-1234-5678')">010-1234-5678</span></p>
+        </div>
+        <div class="contact-item">
+            <p>Mother: <span class="phone-number" onclick="copyToClipboard('010-8765-4321')">010-8765-4321</span></p>
+        </div>
+        <div class="contact-item">
+            <p>Brother: <span class="phone-number" onclick="copyToClipboard('010-1111-2222')">010-1111-2222</span></p>
+        </div>
+    </section>
+
+    <p id="message" style="color: green; display: none;">Phone number copied!</p>
+
+    <script src="app.js"></script>
+</body>
+</html>
