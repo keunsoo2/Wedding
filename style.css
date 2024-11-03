@@ -1,0 +1,27 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+}
+
+#contact-list {
+    padding: 20px;
+}
+
+.contact-item {
+    margin: 10px 0;
+}
+
+.phone-number {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
