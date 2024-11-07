@@ -60,8 +60,17 @@
       cursor: pointer;
       color: #5c9e68;
       font-weight: bold;
-      text-decoration: underline;
-      font-size: 1em;
+      font-size: 1.2em; /* 글자 크기를 조금 더 키웁니다 */
+      display: inline-flex;
+      align-items: center;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: #f0f0f0; /* 배경색 추가 */
+      transition: background-color 0.2s;
+    }
+    
+    .account-number:hover {
+      background-color: #e0e0e0; /* 호버 시 배경색 변경 */
     }
 
     /* 반응형 디자인: 작은 화면에서 각 요소를 조금씩 축소 */
@@ -96,16 +105,16 @@
                 <div class="txt_box">
                   <div class="txt_component color1 big align_l t_space" style="color: rgb(92, 158, 104)">
                     <h4>신랑 아버지 김종명</h4>
-                    <p>농협은행 <span class="account-number" onclick="copyToClipboard('878-02-135481')">878-02-135481</span></p>
+                    <p>농협은행 878-02-135481    <span class="account-number" onclick="copyToClipboard('농협은행 878-02-135481')">📋</span></p>
                   </div>
                 </div>
                 <div class="btn_wrap">
                   <ul class="btn_theme_v2 btn_type_v2">
                     <li class="theme_background">
-                      <a href="tel:01071550939" onclick="return handlePhoneClick('010-7155-0939')"><span class="btn_text">전화</span></a>
+                      <a href="tel:01071550939" onclick="return handlePhoneClick('010-7155-0939')"><span class="btn_text">📞 전화</span></a>
                     </li>
                     <li class="theme_background">
-                      <a href="sms:01071550939" onclick="return handleSmsClick('010-7155-0939')"><span class="btn_text">문자</span></a>
+                      <a href="sms:01071550939" onclick="return handleSmsClick('010-7155-0939')"><span class="btn_text">✉️ 문자</span></a>
                     </li>
                   </ul>
                 </div>
@@ -116,16 +125,16 @@
                 <div class="txt_box">
                   <div class="txt_component color1 big align_l t_space" style="color: rgb(92, 158, 104)">
                     <h4>신랑 어머니 권문정</h4>
-                    <p>경남은행 <span class="account-number" onclick="copyToClipboard('538-22-0043704')">538-22-0043704</span></p>
+                    <p>경남은행 538-22-0043704     <span class="account-number" onclick="copyToClipboard('경남은행 538-22-0043704')">📋</span></p>
                   </div>
                 </div>
                 <div class="btn_wrap">
                   <ul class="btn_theme_v2 btn_type_v2">
                     <li class="theme_background">
-                      <a href="tel:01082420939" onclick="return handlePhoneClick('010-8242-0939')"><span class="btn_text">전화</span></a>
+                      <a href="tel:01082420939" onclick="return handlePhoneClick('010-8242-0939')"><span class="btn_text">📞 전화</span></a>
                     </li>
                     <li class="theme_background">
-                      <a href="sms:01082420939" onclick="return handleSmsClick('010-8242-0939')"><span class="btn_text">문자</span></a>
+                      <a href="sms:01082420939" onclick="return handleSmsClick('010-8242-0939')"><span class="btn_text">✉️ 문자</span></a>
                     </li>
                   </ul>
                 </div>
@@ -136,16 +145,16 @@
                 <div class="txt_box">
                   <div class="txt_component color1 big align_l t_space" style="color: rgb(92, 158, 104)">
                     <h4>신랑 김근수</h4>
-                    <p>우리은행  <span class="account-number" onclick="copyToClipboard('1002-145-166474')">1002-145-166474</span></p>
+                    <p>우리은행 1002-145-166474    <span class="account-number" onclick="copyToClipboard('우리은행 1002-145-166474')">📋</span></p>
                   </div>
                 </div>
                 <div class="btn_wrap">
                   <ul class="btn_theme_v2 btn_type_v2">
                     <li class="theme_background">
-                      <a href="tel:01091850939" onclick="return handlePhoneClick('010-9185-0939')"><span class="btn_text">전화</span></a>
+                      <a href="tel:01091850939" onclick="return handlePhoneClick('010-9185-0939')"><span class="btn_text">📞 전화</span></a>
                     </li>
                     <li class="theme_background">
-                      <a href="sms:01091850939" onclick="return handleSmsClick('010-9185-0939')"><span class="btn_text">문자</span></a>
+                      <a href="sms:01091850939" onclick="return handleSmsClick('010-9185-0939')"><span class="btn_text">✉️ 문자</span></a>
                     </li>
                   </ul>
                 </div>
