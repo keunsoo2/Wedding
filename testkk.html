@@ -9,13 +9,11 @@
   <meta property="og:description" content="신랑측 마음 전하실 곳">
   <meta name="description" content="신랑측 마음 전하실 곳">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> <!-- 모바일 화면을 기본으로 설정 -->
   <title>신랑측 축하의 마음 전달하기 | 신랑측</title>
-  <link rel="stylesheet" type="text/css" href="pc_20241029095428.css">
-  <link rel="stylesheet" type="text/css" href="common_20241029095428.css">
-  <link id="naver-splugin-css" rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/spi/css/20160517/spi_standard_https_20160517.css">
   
   <style id="themeColor">
+    /* 기본 테마 색상 및 버튼 색상 */
     .theme_border { border-color: #5c9e68 !important; }
     .theme_background { background-color: #5c9e68 !important; }
     .theme_color { color: #5c9e68 !important; }
@@ -23,19 +21,37 @@
     .btn_wrap .btn_theme_v2 .theme_a { background-color: #fff !important; color: #5c9e68 !important; }
     .main .btn_wrap .btn_theme { background-color: #fff !important; }
 
-    /* 버튼 크기, 간격 및 정렬 스타일 */
+    /* 모바일 스타일 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .fc_content {
+      padding: 20px;
+    }
+    .txt_component h4 {
+      font-size: 1.2em;
+      margin-bottom: 5px;
+    }
+    .txt_component p {
+      font-size: 1em;
+      margin: 0;
+    }
     .btn_wrap ul {
       display: flex;
       gap: 10px;
+      justify-content: center;
     }
     .btn_wrap a {
       display: inline-block;
-      padding: 10px 20px;
-      text-align: center;
-      font-size: 16px;
+      padding: 8px 12px;
+      font-size: 0.9em;
       border-radius: 5px;
       color: #fff;
       text-decoration: none;
+      text-align: center;
+      width: 80px;
     }
     .btn_wrap a:hover {
       background-color: #4a8759;
@@ -45,6 +61,25 @@
       color: #5c9e68;
       font-weight: bold;
       text-decoration: underline;
+      font-size: 1em;
+    }
+
+    /* 반응형 디자인: 작은 화면에서 각 요소를 조금씩 축소 */
+    @media (max-width: 600px) {
+      .fc_content {
+        padding: 10px;
+      }
+      .txt_component h4 {
+        font-size: 1.1em;
+      }
+      .txt_component p {
+        font-size: 0.9em;
+      }
+      .btn_wrap a {
+        padding: 6px 10px;
+        font-size: 0.85em;
+        width: 70px;
+      }
     }
   </style>
 </head>
