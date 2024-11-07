@@ -22,3 +22,24 @@ function copyToClipboard(number) {
         message.style.display = "none";
     }, 3000);
 }
+function isMobileDevice() {
+    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+
+function handlePhoneClick(number) {
+    if (isMobileDevice()) {
+        alert(`"${number}"로 전화 연결이 시작됩니다.`);
+    } else {
+        alert("전화 연결은 모바일 기기에서만 가능합니다.");
+        return false;
+    }
+}
+
+function handleSmsClick(number) {
+    if (isMobileDevice()) {
+        alert(`"${number}"로 문자 작성 화면으로 이동합니다.`);
+    } else {
+        alert("문자 전송은 모바일 기기에서만 가능합니다.");
+        return false;
+    }
+}
